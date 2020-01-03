@@ -1,0 +1,309 @@
+html, body {
+	font-family: sans-serif;
+    margin: 0;
+	background: url("ad.jpg");
+	background-size: 100%;
+    background-attachment: fixed;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    padding-bottom: 15px;
+    padding-top: 15px;
+	margin: 10px;
+	position: relative;
+   /* background: rgba(255, 255, 255, 0.3);  */  
+}
+
+.header-logo {
+	display: inline-block;
+    padding-left: 80px;
+}
+
+.logo{
+    width: 300px;
+}
+
+.menu{
+    list-style: none;
+	float: right;
+	padding-right: 30px;
+}
+
+.menu li {
+	display: inline-block;
+}
+
+.menu li a {
+	display: block;
+	font-size: 15px;
+	color: #ffffff;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 10px;
+	margin-right: 35px;
+	margin-top: 15px;
+}
+
+li a:hover {
+	background-color: #918d8d;
+}
+
+.active {
+	background-color: rgb(144, 92, 241,0.6);
+}
+
+/*=============SECTION=============*/
+.isi {
+    background: rgb(202, 201, 201, 0.2);
+    height: 450px;
+    padding: 15px 15px;
+    position: relative;
+    margin: 30px 30px 0px 30px;
+}
+
+.warp {
+	width: 100%;
+    margin: 0 auto;
+}
+
+.text{
+    padding-left: 30px;
+    width: 50%;
+    float: left;
+}
+
+.text h1 {
+	font-size: 48px;
+	margin-bottom: 25px;
+}
+
+.text p {
+	margin-bottom: 45px;
+	text-align: justify;
+}
+
+.profile-foto {
+	position: relative;
+    width: 45%;
+	float: right;
+}
+
+/*.foto_profile{
+	background: url("../gambar/23.png");
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 300px;
+	border-radius: 8px;
+}*/
+.foto_profile {
+	display: block;
+	width: 60%;
+	height: auto;
+	padding-left: 100px;
+	padding-top: 70px;
+  }
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 100px;
+	right: 0;
+	width: 60%;
+	height: 0;
+	overflow: hidden;
+	transition: .5s ease;
+	background-color: rgb(11, 147, 192,0.7);
+}
+  
+.profile-foto:hover .overlay {
+	height: 83%;
+}
+  
+.tulis {
+	white-space: nowrap;
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	width: 200px;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+
+
+/*==========FOOTER==========*/
+
+footer {
+	padding: 19px 40px;
+	position: relative;
+}
+
+.copy{
+	color: #fff;
+	font-size: 11px;
+	font-weight: 500;
+    padding: 4px;
+    text-align: center;
+}
+
+/*==========Galeri==========*/
+
+.poto1{
+	padding-left: 60px;
+	padding-top: 60px;
+}
+.poto2{
+	padding: 20px 0px 20px 200px;
+}
+
+.poto3{
+	padding-left: 500px ;
+}
+
+.galeri{
+	display: inline;
+	margin: auto;
+}
+
+.isi-foto1 img {
+	width: 200px;
+	transition: width 1.5s;
+}
+
+.isi-foto2 img, .isi-foto3 img {
+	width: 300px;
+	transition: width 1.5s;
+}
+
+.isi-foto1 img:hover{
+	width: 250px;
+}
+
+.isi-foto2 img:hover, .isi-foto3 img:hover{
+	width: 330px;
+}
+
+/*============KONTAK==========*/
+
+.text-form h2{
+	float: left;
+	font-size: 40px;
+	border-bottom: 5px solid #525352;
+	margin-bottom: 40px;
+	padding: 13px 0;
+	color: white;
+}
+	
+.tombol{
+	background-color: rgb(47, 24, 253);
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+	width: 100%;
+}
+
+.isi-form{
+	position: relative;
+	padding: 50px 0;
+	width: 40%;
+	margin: 100px auto;
+	padding-left: 150px;
+	background-color: rgba(57, 44, 173, 0.2);
+}
+
+.form-input{
+	padding-top: 20px;
+	padding-right: 150px;
+}
+
+.form-input input,
+.form-input textarea {
+	font-size: 14px;
+	color: #7d7d7d;
+	border: none;
+	border-bottom: 2px solid #ffffff;
+	padding-bottom: 14px;
+	margin-bottom: 20px;
+}
+
+.form-input input{
+	width: 95%;
+	background: none;
+	color: white;
+	font-size: 15px;
+}
+
+.form-input textarea {
+	width: 100%;
+	height: 165px;
+	margin-bottom: 38px;
+	background: none;
+	background: none;
+	color: white;
+	font-size: 15px;
+}
+
+.pesan::-webkit-input-placeholder {
+	padding-top: 130px;
+	background: none;
+}
+
+.tombol:hover{
+	background-color: rgb(15, 5, 99);
+}
+
+/*============ABOUT==========*/
+label{
+	text-align: center;
+	font-size: 25px;
+	color: white;
+}
+
+th,td{
+	border-right: none;
+	border-bottom: 1px solid gray;
+	padding: 10px 30px 10px 30px;
+	text-align: left;
+}
+
+tr{
+	color: white;
+}
+th{
+	text-align: center;
+	background-color: rgb(73, 13, 141);
+  	color: white;
+}
+
+tr:hover {
+	background-color: rgb(187, 147, 147,0.5);
+}
+
+.table{
+	position: relative;
+	padding: 50px 0;
+	width: 45%;
+	margin: 100px auto;
+	padding-left: 150px;
+	background-color: rgba(57, 44, 173, 0.2);
+}
+
+.table h2{
+	padding-bottom: 20px;
+	color: white;
+}
+
+table{
+	padding-left: 20px;
+}
